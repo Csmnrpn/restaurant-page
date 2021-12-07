@@ -1,2 +1,5 @@
-console.log('the build works!');
-console.log('retry this baby');
+import frontFunction from './front';
+import './style.css';
+
+
+frontFunction();
