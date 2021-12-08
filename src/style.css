@@ -1,3 +1,45 @@
-.red {
-    color: red;
+@font-face {
+
+    font-family: 'italian';
+
+    src: url('./Italianno-Regular.ttf');
+
+}
+
+
+* {
+    height: 0;
+    width: 0;
+    box-sizing: border-box;
+}
+
+.frontPageContent {
+    background-image: url('./pizzaBg.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.restaurantName {
+    font-family: 'italian';
+    text-align: center;
+    padding-bottom: 1.5em;
+    width: 90vw;
+    font-size: 80px;
+}
+
+.openHours {
+    font-family: 'italian';
+    text-align: center;
+    width: 90vw;
+    font-size: 35px;
 }
