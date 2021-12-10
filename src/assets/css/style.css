@@ -1,0 +1,86 @@
+@font-face {
+
+    font-family: 'italian';
+
+    src: url('/src/assets/fonts/Italianno-Regular.ttf');
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    background-color: #bb5932de;
+}
+
+.frontPageContent {
+    background-image: url('/src/assets/images/pizzaBg.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 2em;
+    padding-top: 7em;
+}
+
+.restaurantName {
+    font-family: 'italian';
+    text-align: center;
+    padding-bottom: 1.5em;
+    width: 90vw;
+    font-size: 80px;
+}
+
+.openHours {
+    font-family: 'italian';
+    text-align: center;
+    width: 90vw;
+    font-size: 35px;
+}
+
+.menuContainer {
+    margin: 0 auto;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pizzaContainer {
+    font-size: 30px;
+    padding: .6em;
+    background-color: #ebebeb;
+    margin-bottom: 2em;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0em .5em 2em .5em;
+    transition: background-color .1s;
+}
+
+.pizzaContainer:hover {
+    background-color: #ebebebbb;
+}
+
+.pizzaImage {
+    margin-bottom: .6em;
+}
+
+.pizzaName {
+    font-family: 'italian';
+}
+
+.price {
+    color: rgb(155, 153, 153);
+}

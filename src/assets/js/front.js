@@ -1,7 +1,5 @@
-const content = document.querySelector('#content');
-
-
 const frontFunction = function () {
+    const content = document.querySelector('#content');
     const mainContent = document.createElement('div');
     const heading = document.createElement('h1');
     const openHours = document.createElement('p');
