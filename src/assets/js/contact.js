@@ -1,5 +1,6 @@
 const createContactPage = () => {
     const content = document.querySelector('#content');
+    content.innerHTML = '';
 
     const contactContainer = document.createElement('div');
     contactContainer.classList.add('contactContainer');
@@ -22,6 +23,7 @@ const createContactPage = () => {
         createContactInformation('RESERVATIONS', '0726 000 XXX', contactInformation),
         createContactInformation('EMAIL', 'thisemail@isnotreal.ro', contactInformation)
     ];
+
 }
 
 function createContactInformation(title, description, contactInformation) {

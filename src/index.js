@@ -7,7 +7,7 @@ import {
 } from './assets/js/contact';
 import './assets/css/style.css';
 
-
+frontFunction();
 const body = document.querySelector('body');
 
 const navbar = document.createElement('div');
@@ -19,21 +19,27 @@ navigation.classList.add('navigation');
 navbar.appendChild(navigation);
 
 const navigationItems = ['home', 'menu', 'contact'];
+const navigationFunctions = [frontFunction, createMenu, createContactPage];
 
-navigationItems.forEach(item => {
-    const navItem = document.createElement('li');
-    const navText = document.createElement('h2');
-    navText.innerText = item.toUpperCase();
-    navItem.appendChild(navText);
-    navigation.appendChild(navItem);
+const homeItem = document.createElement('li');
+const homeText = document.createElement('h2');
+homeText.innerText = navigationItems[0].toUpperCase();
+homeItem.appendChild(homeText);
+navigation.appendChild(homeItem);
+homeItem.addEventListener('click', frontFunction);
 
-    navItem.addEventListener('click', (item) => {
+const menuItem = document.createElement('li');
+const menuText = document.createElement('h2');
+menuText.innerText = navigationItems[1].toUpperCase();
+menuItem.appendChild(menuText);
+navigation.appendChild(menuItem);
+menuItem.addEventListener('click', createMenu);
 
-    })
-})
-
-
-
-frontFunction();
+const contactItem = document.createElement('li');
+const contactText = document.createElement('h2');
+contactText.innerText = navigationItems[2].toUpperCase();
+contactItem.appendChild(contactText);
+navigation.appendChild(contactItem);
+contactItem.addEventListener('click', createContactPage);
 // createMenu();
 // createContactPage();

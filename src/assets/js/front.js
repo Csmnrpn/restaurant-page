@@ -1,5 +1,6 @@
 const frontFunction = function () {
     const content = document.querySelector('#content');
+    content.innerHTML = '';
     const mainContent = document.createElement('div');
     const heading = document.createElement('h1');
     const openHours = document.createElement('p');

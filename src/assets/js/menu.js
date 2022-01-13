@@ -23,6 +23,7 @@ const createMenuItem = (name, price, container) => {
 
 const createMenu = () => {
     const content = document.querySelector('#content');
+    content.innerHTML = '';
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menuContainer');
 
