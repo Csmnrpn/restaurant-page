@@ -1,4 +1,19 @@
-const createMenuItem = (name, price, container) => {
+import affumicata from '../images/affumicata.webp'
+import caprese from '../images/caprese.webp';
+import capricciosa from '../images/capricciosa.webp';
+import caserta from '../images/caserta.webp';
+import cosacca from '../images/cosacca.webp';
+import margherita from '../images/margherita.webp';
+import parmigiana from '../images/parmigiana.webp';
+import pugliese from '../images/pugliese.webp';
+import romagnola from '../images/romagnola.webp';
+import siciliana from '../images/siciliana.webp';
+import tonata from '../images/tonata.webp';
+import vegana from '../images/vegana.webp';
+import marinara from '../images/marinara.webp';
+
+
+const createMenuItem = (name, price, container, source) => {
     const itemContainer = document.createElement('div');
     itemContainer.classList.add('pizzaContainer');
 
@@ -11,7 +26,7 @@ const createMenuItem = (name, price, container) => {
     itemPrice.classList.add('price');
 
     const itemImage = document.createElement('img');
-    itemImage.src = `../src/assets/images/${name.toLowerCase()}.webp`;
+    itemImage.src = source;
     itemImage.alt = `image of ${name}`;
     itemImage.classList.add('pizzaImage');
 
@@ -31,19 +46,19 @@ const createMenu = () => {
     content.appendChild(menuContainer);
 
     const menuItemsArray = [
-        createMenuItem('Margherita', '30 lei', menuContainer),
-        createMenuItem('Caprese', '32 lei', menuContainer),
-        createMenuItem('Parmigiana', '32 lei', menuContainer),
-        createMenuItem('Tonata', '33 lei', menuContainer),
-        createMenuItem('Pugliese', '33 lei', menuContainer),
-        createMenuItem('Siciliana', '35 lei', menuContainer),
-        createMenuItem('Affumicata', '36 lei', menuContainer),
-        createMenuItem('Romagnola', '36 lei', menuContainer),
-        createMenuItem('Caserta', '38 lei', menuContainer),
-        createMenuItem('Vegana', '38 lei', menuContainer),
-        createMenuItem('Marinara', '40 lei', menuContainer),
-        createMenuItem('Cosacca', '40 lei', menuContainer),
-        createMenuItem('Capricciosa', '41 lei', menuContainer)
+        createMenuItem('Margherita', '30 lei', menuContainer, margherita),
+        createMenuItem('Caprese', '32 lei', menuContainer, caprese),
+        createMenuItem('Parmigiana', '32 lei', menuContainer, parmigiana),
+        createMenuItem('Tonata', '33 lei', menuContainer, tonata),
+        createMenuItem('Pugliese', '33 lei', menuContainer, pugliese),
+        createMenuItem('Siciliana', '35 lei', menuContainer, siciliana),
+        createMenuItem('Affumicata', '36 lei', menuContainer, affumicata),
+        createMenuItem('Romagnola', '36 lei', menuContainer, romagnola),
+        createMenuItem('Caserta', '38 lei', menuContainer, caserta),
+        createMenuItem('Vegana', '38 lei', menuContainer, vegana),
+        createMenuItem('Marinara', '40 lei', menuContainer, marinara),
+        createMenuItem('Cosacca', '40 lei', menuContainer, cosacca),
+        createMenuItem('Capricciosa', '41 lei', menuContainer, capricciosa)
     ];
 }
 

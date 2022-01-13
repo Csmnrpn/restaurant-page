@@ -93,6 +93,8 @@ body {
 }
 
 .contactContainer {
+    background-image: url('/src/assets/images/pizzaBg.jpg');
+    background-size: cover;
     display: flex;
     border: 1px solid black;
     padding-top: 200px;
